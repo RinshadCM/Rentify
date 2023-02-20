@@ -1,0 +1,59 @@
+<div class="container rounded bg-white mt-5">
+    <div class="row">
+        <!-- <div class="col-md-4 border-right">
+            <div class="d-flex flex-column align-items-center text-center p-3 py-5"><img class="rounded-circle mt-5" src="https://i.imgur.com/0eg0aG0.jpg" width="90"><span class="font-weight-bold">John Doe</span><span class="text-black-50">john_doe12@bbb.com</span><span>United States</span></div>
+        </div> -->
+        <div class="col-md-8">
+            <div class="p-3 py-5">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <!-- <div class="d-flex flex-row align-items-center back"><i class="fa fa-long-arrow-left mr-1 mb-1"></i>
+                        <h6>Back to home</h6>
+                    </div> -->
+                    <h6 class="text-right">Edit Product</h6>
+                </div>
+                <form (ngSubmit)="updateProduct(updateproductform)" #updateproductform="ngForm" action="">
+                    <div class="row mt-2">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.id"  id="pid" name="p1" type="text"
+                                class="form-control" placeholder="Product ID"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.productName"  id="pname" name="p2" type="text"
+                                class="form-control" placeholder="Product name"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.categoryId"  id="cid" name="p3" type="text"
+                                class="form-control" placeholder="Category ID"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.description"  id="did" name="p4" type="text"
+                                class="form-control" placeholder="Description ID"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.price"  id="priceid" name="pr4" type="text"
+                                class="form-control" placeholder="Price"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.previousPrice"  id="prevpriceid" name="prepr4"
+                                type="text" class="form-control" placeholder="Previous price"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.isAvailable"  id="avid" name="p5" type="text"
+                                class="form-control" placeholder="Is available(True/False)"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.rating"  id="ratid" name="p7" type="text"
+                                class="form-control" placeholder="Product rating "></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.reviews"  id="reid" name="p8" type="text"
+                                class="form-control" placeholder="Product review"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.vendorName"  id="venid" name="p9" type="text"
+                                class="form-control" placeholder="Vendor name"></div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6"><input [(ngModel)]="productdata.productImage"  id="imid" name="p6" type="text"
+                                class="form-control" placeholder="Product image"></div>
+                        <div class="col-md-6"><input [(ngModel)]="productdata.about"  id="abid" name="p10" type="text"
+                                class="form-control" placeholder="About"></div>
+                    </div>
+
+
+                    <div class="mt-5 text-right"><button class="btn btn-primary profile-button" type="submit">Update
+                            Product</button></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

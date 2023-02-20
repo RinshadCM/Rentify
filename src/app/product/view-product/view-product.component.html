@@ -1,0 +1,42 @@
+<div class="container mt-5 mb-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-md-10">
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="images p-3">
+                            <div class="text-center p-4"> <img id="main-image" src="{{productdata.productImage}}"
+                                    width="400" /> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="product p-5">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center"> <i class="fa fa-long-arrow-left"></i> <span
+                                        class="ml-1">Back</span> </div> <i class="fa fa-shopping-cart text-muted"></i>
+                            </div>
+                            <div class="mt-4 mb-3">
+                                <h5 class="text-uppercase">{{productdata.productName}}</h5>
+                                <div class="price d-flex flex-row align-items-center"> <span
+                                        class="act-price">₹{{productdata.price}}</span>
+                                    <div class="ml-2"> <small class="dis-price">₹{{productdata.previousPrice}}</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="about">{{productdata.about}}</p>
+
+                            <p>Reviews: {{productdata.reviews}}</p>
+                            <p>Rating: {{productdata.rating}}</p>
+                            <div class="cart mt-4 align-items-center"> <button
+                                    class="btn btn-danger text-uppercase mr-2 px-4">Add to cart</button> 
+                            </div>
+                            <div class="cart mt-4 align-items-center p-2 fs-5">
+                                <a href="product/edit-product/{{productdata.id}}" class="fa-solid fa-pen-to-square" style="color: black;"></a> <a href="product/delete-product/{{productdata.id}}" class="fa-sharp fa-solid fa-trash p-3" style="color: black;"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

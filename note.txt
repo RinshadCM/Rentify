@@ -1,0 +1,47 @@
+Lazy loading technique
+------------------------
+
+- This is used for reducing the traffic for a page
+
+-Module creation
+
+    ng g module moduleName
+
+-Lazy loaded module creation
+
+    ng g module moduleName --route moduleName --module rootmoduleName
+
+    Eg:- ng g module product --route product --module app.module
+
+
+JSON Server
+------------
+
+    npx json-server --watch db.json --port 3000
+
+
+Ecommerce Rental
+-----------------
+1- Clothings
+2- Vehicles
+3- Properties
+4- Electronics
+5- Media Entertainment Equipments
+6- Computer Accessories
+7- Others
+
+
+Access Data from component path(url)
+-------------------------------------
+
+ActivatedRoute  - class
+params          - method
+
+Create Pipe 
+-----------
+
+    ng g pipe filter
+
+Behaviour Subject in Angular
+----------------------------
+rxjs -

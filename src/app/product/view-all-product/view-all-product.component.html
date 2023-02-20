@@ -1,0 +1,83 @@
+<div class="container mt-100">
+    <div class="row">
+        <div (click)="filter('')" class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://i.postimg.cc/ydpZgZwT/all.jpg" alt="Category"></div>
+                        <div class="thumblist"><img src="https://i.postimg.cc/W4XDCZbP/rent.jpg" alt="Category"><img
+                                src="https://i.postimg.cc/P5HQkmhL/allp.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">All Products</h4>
+                    <p class="text-muted">Starting from ₹999 </p>
+                </div>
+            </div>
+        </div>
+        <div (click)="filter(1)"  class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles"  data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://i.postimg.cc/gjkF2ss7/Clothingss.jpg" alt="Category">
+                        </div>
+                        <div class="thumblist"><img src="https://i.postimg.cc/2jbngHpj/men.jpg" alt="Category"><img
+                                src="https://i.postimg.cc/XNfYZFdc/women.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Clothings</h4>
+                    <p class="text-muted">Starting from ₹999</p>
+                </div>
+            </div>
+        </div>
+        <div (click)="filter(2)"  class="col-md-4 col-sm-6">
+            <div class="card mb-30"><a class="card-img-tiles" data-abc="true">
+                    <div class="inner">
+                        <div class="main-img"><img src="https://i.postimg.cc/KzFB4qVx/vehicles.jpg" alt="Category">
+                        </div>
+                        <div class="thumblist"><img src="https://i.postimg.cc/W3s0WYst/carsq.jpg" alt="Category"><img
+                                src="https://i.postimg.cc/HnRcg61w/bikesq.jpg" alt="Category"></div>
+                    </div>
+                </a>
+                <div class="card-body text-center">
+                    <h4 class="card-title">Vehicles</h4>
+                    <p class="text-muted">Starting from ₹10000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="row p-5">
+    <div *ngFor="let i of filterproducts | filter:searchkey:'productName'" class="col-md-3 col-sm-6">
+        <div class="product-grid">
+            <div class="product-image">
+                <a href="#" class="image">
+                    <img class="pic-1" src="{{i.productImage}}">
+                </a>
+                <!-- <span class="product-discount-label"></span> -->
+                <ul class="product-links">
+                    <li><a href="#" data-tip="Add to Wishlist"><i class="fas fa-heart"></i></a></li>
+                    <li><a href="#" data-tip="Compare"><i class="fa fa-random"></i></a></li>
+                    <li><a href="#" data-tip="Quick View"><i class="fa fa-search"></i></a></li>
+                </ul>
+            </div>
+            <div class="product-content">
+                <ul class="rating">
+                    <li class="fas fa-star"></li>
+                    <li class="fas fa-star"></li>
+                    <li class="fas fa-star"></li>
+                    <li class="fas fa-star"></li>
+                    <li class="far fa-star"></li>
+                </ul>
+                <h3 class="title spacing"><a href="#">{{i.productName}}</a></h3>
+                <p class="spacing">{{i.description}}</p>
+                <div class="price spacing"><span>₹{{i.previousPrice}}</span> ₹{{i.price}}</div>
+                <a class="add-to-cart" href="product/view-product/{{i.id}}">View Product</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,88 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "MEN'S BLAZER",
+      "categoryId": 1,
+      "description": "Polyester Blend Solid Coat For Men",
+      "about": "A blazer is a type of jacket resembling a suit jacket, but cut more casually. A blazer is generally distinguished from a sport coat as a more formal garment and tailored from solid colour fabrics. Blazers often have naval-style metal buttons to reflect their origin as jackets worn by boating club members",
+      "price": 1000,
+      "previousPrice": 1500,
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/1XqrM2ZL/blazernsq.jpg",
+      "rating": 4.3,
+      "reviews": 525,
+      "vendorName": "ABC"
+    },
+    {
+      "id": 3,
+      "productName": "White Rollce Royce Car",
+      "categoryId": 2,
+      "description": "White Rollce Royce 2018",
+      "about": "Rolls-Royce Ghost Engine and Transmission: The Ghost comes with a 6.75-litre twin-turbo V12 engine (571PS/850Nm) paired with a ZF 8-speed automatic transmission",
+      "price": 30000,
+      "previousPrice": 45000,
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/1zDPh5rt/rollce-roycesq.jpg",
+      "rating": 4.3,
+      "reviews": 1245,
+      "vendorName": "ABC"
+    },
+    {
+      "id": 4,
+      "productName": "Harley Davidson Bike",
+      "categoryId": "2",
+      "description": "Black & Brown Harley Davidson",
+      "price": "20000",
+      "previousPrice": "25000",
+      "isAvailable": "true",
+      "rating": "4",
+      "reviews": "1452",
+      "vendorName": "ABC",
+      "productImage": "https://i.postimg.cc/jqGN73Xn/harleysq.jpg",
+      "about": "The blacked-out, liquid-cooled V-Twin engine is built to conquer the hot and heavy traffic of urban streets. You can count on a smooth response"
+    },
+    {
+      "id": 5,
+      "productName": "Contemporary country house",
+      "categoryId": 3,
+      "description": "Contemporary country house",
+      "about": "What defines a contemporary style home? Contemporary style embraces minimalistic elements highlighting grays, beiges and shades of white. Sleek, thoughtful, hidden details emphasize an edited aesthetic. Contemporary style offers an 'everything in its place' interior featuring designs that are high on function and simplicity and low on collections and fuss.",
+      "price": 70000,
+      "previousPrice": 90000,
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/jqgp17Yc/housesq.jpg",
+      "rating": 4.5,
+      "reviews": 1274,
+      "vendorName": "ABC"
+    },
+    {
+      "id": 6,
+      "productName": "Washing Machine",
+      "categoryId": 3,
+      "description": "Hard Water Wash Fully Automatic Front Load with In-built Heater",
+      "about": "Front load washers typically use less water to clean clothes and provide a gentle washing action on clothing items and are more efficient at removing stains. They also have faster spinning speeds that expel more water from clothing, so drying times tend to be shorter.",
+      "price": 2000,
+      "previousPrice": 3500,
+      "isAvailable": true,
+      "productImage": "https://i.postimg.cc/nzVWRHdN/washing-machinesq.jpg",
+      "rating": 4.5,
+      "reviews": 125,
+      "vendorName": "ABC"
+    },
+    {
+      "id": "7",
+      "productName": "Mercedes Benz",
+      "categoryId": "2",
+      "description": "A Yellow Sports Car on the Asphalt",
+      "price": "45000",
+      "previousPrice": "55000",
+      "isAvailable": "true",
+      "productImage": "https://i.postimg.cc/YSLLwT4R/benzsq.jpg",
+      "rating": "4",
+      "reviews": "23412",
+      "vendorName": "Abc",
+      "about": "The Mercedes-Benz SLR McLaren Roadster (R199) is a limited production grand tourer convertible produced jointly by McLaren Automotive and Mercedes"
+    }
+  ]
+}
