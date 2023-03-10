@@ -17,5 +17,10 @@ export class HeaderComponent {
     this.searchterm=event.target.value
     this.ps.search.next(this.searchterm)
     
+    const element = document.getElementById('view');
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 }

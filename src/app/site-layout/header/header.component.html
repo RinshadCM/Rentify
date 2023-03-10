@@ -2,7 +2,11 @@
     <div class="header-blue">
         <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
             <div class="container">
-                <div><i class="fa-solid fa-cart-shopping"></i><a class="navbar-brand" href="#">RioKart</a></div><button
+                <!-- <div><i class="fa-solid fa-cart-shopping"></i><a class="navbar-brand" href="#">RioKart</a></div> -->
+                <div>
+                    <img id="image" src="https://i.postimg.cc/zGb26zcQ/Indigo-White-Modern-Minimal-Typographic-Business-Brand-Identity-Logo-removebg-preview.png" alt="">
+                </div>
+                <button
                     class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span
                         class="sr-only"></span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
@@ -18,8 +22,9 @@
                     </ul>
                     <form class="form-inline mr-auto" target="_self">
                         <div class="form-group"><label for="search-field"><i class="fa fa-search"></i></label>
-                            <input (keyup)="search($event)" [(ngModel)]="searchterm" id="s1" class="form-control search-field" type="search" name="search" id="search-field"></div>
-                    </form><span class="navbar-text"> <a href="#" class="login">Log In</a></span><a
+                            <input (keydown)="search($event)" [(ngModel)]="searchterm" id="s1" class="form-control search-field" type="search" name="search" id="search-field"></div>
+                    </form>
+                    <span class="navbar-text"> <a href="#" class="login">Log In</a></span><a
                         class="btn btn-light action-button" role="button" href="#">Sign Up</a>
                 </div>
             </div>

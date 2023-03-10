@@ -8,34 +8,41 @@ import { ProductserviceService } from '../productservice.service';
 })
 export class ViewAllProductComponent {
 
-  productlist:any
-  filterproducts:any
-  searchkey:any
+  productlist: any
+  filterproducts: any
+  searchkey: any
 
-  constructor (private ps:ProductserviceService){
+  constructor(private ps: ProductserviceService) {
 
   }
   ngOnInit(): void {
-    this.ps.viewAllProducts().subscribe((data:any)=>{
+    this.ps.viewAllProducts().subscribe((data: any) => {
       // console.log(data);
-      this.productlist=data
+      this.productlist = data
     })
 
     // Access data from behaviour subject
-    this.ps.search.subscribe((data:any)=>{
-      this.searchkey=data
+    this.ps.search.subscribe((data: any) => {
+      this.searchkey = data
     })
 
   }
 
-  filter(category:any){
-    this.filterproducts=this.productlist.filter((item:any)=>{
-      if(item.categoryId==category || category==""){
-        return item
+  filter(category: any) {
+    this.filterproducts = this.productlist.filter((item: any) => {
+      if (item.categoryId == category || category == "") {
+        return item;
       }
-    })
+    });
+
+    // Scroll to the top of the filtered products list
+    const element = document.getElementById('view');
+
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
-  
+
 
 }
